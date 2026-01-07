@@ -8,7 +8,7 @@
             <div class="hero-content">
                 <h1>{!! __('Discover Hidden Gems') !!}</h1>
                 <p class="lead mb-4 text-light opacity-75">{!! __('Experience the rich culture, stunning landscapes, and warm
-                    hospitality of Uzbekistan\'s flower city.') !!}</p>
+                    hospitality of Uzbekistan flower city.') !!}</p>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="{{ route('tours.index') }}"
                         class="btn btn-primary-custom btn-lg px-5">{{ __('Explore Tours') }}</a>
