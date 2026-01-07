@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', __('meta_title_about'))
+@section('meta_description', __('meta_description_about'))
+
 @section('content')
     <div class="container my-5">
         @if($about)

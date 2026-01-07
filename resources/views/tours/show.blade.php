@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', $tour->getTranslated('title') . ' - Namangan Turizm')
+@section('meta_description', Str::limit(strip_tags($tour->getTranslated('description')), 150))
+@section('meta_image', isset($tour->images[0]) ? asset('storage/' . $tour->images[0]) : '')
+
 @section('content')
     <div class="container my-5">
         <div class="row">

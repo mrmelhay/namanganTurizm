@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', __('meta_title_tours'))
+@section('meta_description', __('meta_description_tours'))
+
 @section('content')
     <div class="container my-5 pt-4">
         <div class="text-center mb-5">

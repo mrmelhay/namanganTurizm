@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', __('meta_title_contact'))
+@section('meta_description', __('meta_description_contact'))
+
 @section('content')
     <div class="container my-5">
         <h1>{{ __('Contact Us') }}</h1>

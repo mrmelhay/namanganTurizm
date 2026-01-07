@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', $post->getTranslated('title') . ' - Namangan Turizm')
+@section('meta_description', Str::limit(strip_tags($post->getTranslated('body')), 150))
+@section('meta_image', $post->image_path ? asset('storage/' . $post->image_path) : '')
+
 @section('content')
     <div class="container my-5">
         <div class="row">

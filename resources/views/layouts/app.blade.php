@@ -4,7 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Namangan Turizm</title>
+    <title>@yield('title', 'Namangan Turizm')</title>
+    <meta name="description" content="@yield('meta_description', __('Explore the beauty of Uzbekistan with Namangan Turizm.'))">
+    <meta name="keywords" content="@yield('meta_keywords', 'Namangan, Uzbekistan, Tourism, Travel, Tours, Hotels')">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title', 'Namangan Turizm')">
+    <meta property="og:description" content="@yield('meta_description', __('Explore the beauty of Uzbekistan with Namangan Turizm.'))">
+    <meta property="og:image" content="@yield('meta_image', asset('assets/images/logo.png'))">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
